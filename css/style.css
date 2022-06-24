@@ -1,0 +1,63 @@
+:root {
+    --blue-intro:  hsl(217, 28%, 15%); 
+    --blue-footer:  hsl(216, 53%, 9%); 
+    --blue-testimonials: hsl(219, 30%, 18%); 
+    --white:  hsl(0, 0%, 100%); 
+    --cyan-gradient:  hsl(176, 68%, 64%); 
+    --blue-gradient: hsl(198, 60%, 50%); 
+    --light-red:hsl(0, 100%, 63%); 
+    --gradient: linear-gradient(to right, var(--cyan-gradient), var(--blue-gradient));
+    --body-font: 'Open Sans', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+    --padding-container:60px 0;
+}
+
+*, ::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: var(--body-font);
+}
+
+.hero{
+    background-color: var(--blue-intro);
+}
+
+.container{
+    width: 90%;
+    /*Para que el contenedor no crezca mas que ese ancho*/
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    /*Para que todo lo que salga de ese contenedor, se oculte*/
+    overflow: hidden;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo{
+   width: 100px;
+}
+
+.nav__img{
+    width: 100%;
+    display: block;
+}
+
+.nav__link{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-left: .6em;
+}
+
+/*Toma el primer elemento de ese grupo de elementos*/
+.nav__link:first-of-type{
+    /*Para que mande a la derecha todos los elementos*/
+    margin-left: auto;
+}
+
