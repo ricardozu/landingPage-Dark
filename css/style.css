@@ -1,5 +1,6 @@
 :root {
     --blue-intro:  hsl(217, 28%, 15%); 
+    --blue-main: hsl(218, 28%, 13%); 
     --blue-footer:  hsl(216, 53%, 9%); 
     --blue-testimonials: hsl(219, 30%, 18%); 
     --white:  hsl(0, 0%, 100%); 
@@ -14,6 +15,7 @@
 
 *, ::after,::before{
     box-sizing: border-box;
+    padding: 0;
     margin: 0;
 }
 body{
@@ -22,6 +24,7 @@ body{
 
 .hero{
     background-color: var(--blue-intro);
+    position: relative;
 }
 
 .container{
@@ -60,4 +63,72 @@ body{
     /*Para que mande a la derecha todos los elementos*/
     margin-left: auto;
 }
+
+.hero__picture{
+    width: 340px;
+    overflow: hidden;
+}
+
+.hero__wave{
+    /*Para que se posicione encima del .hero__main que esta en relative y ell cual es el contenedor de las imagen, titulo, paragraph y boton*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background-color: var(--blue-main);
+}
+
+/*Para hacer la sombra en forma de ola detras de la imagen*/
+.hero__wave::before{
+    content: "";
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/icon/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.hero__main{
+    color: #fff;
+    display: grid;
+    /*Para que todos los elementos (imagen, titulo, parrafo y boton) se centren sin la necesidad de utilizar margin o bottom*/
+    gap: 1.5em;
+    text-align: center;
+    /*Para poner hero weave detras se debe colocar este en relative*/
+    position: relative
+}
+
+.hero__img{
+    width: 100%;
+    display: block;
+}
+
+.hero__title{
+    margin-top: .5em;
+    font-family: var(--heading-font);
+}
+
+.hero__paragraph{
+    /* margin: .5em 0; */
+    /*Interlineado*/
+    line-height: 1.5;
+}
+
+.hero_cta{
+   width: 250px;
+   padding: 1em 0;
+   border-radius: 2em;
+   /*Funciona ya que es un grid item, el padre es display grid*/
+   place-self: center;
+   background-image:var(--gradient); 
+   color: #fff;
+   font-weight: bold;
+   font-family: var(--heading-font);
+   text-decoration: none;
+}
+
+
 
