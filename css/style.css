@@ -66,8 +66,16 @@ body{
 }
 
 .hero__picture{
-    width: 340px;
+    min-width: 340px;
+    max-width: 600px;
     overflow: hidden;
+    margin: 0 auto;
+}
+
+.hero__img{
+    width: 100%;
+    display: block;
+    max-width: 600px;
 }
 
 .hero__wave{
@@ -100,11 +108,6 @@ body{
     text-align: center;
     /*Para poner hero weave detras se debe colocar este en relative*/
     position: relative
-}
-
-.hero__img{
-    width: 100%;
-    display: block;
 }
 
 .hero__title{
@@ -150,9 +153,225 @@ body{
 }
 
 .about__title{
-    margin-top: 1.5em;
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+    font-family: var(--heading-font);
+}
+
+.productive{
+    display: grid;
+    color: #fff;
+    gap: 3em;
+}
+
+.productive__picture{
+    min-width: 350px;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+
+.productive__img{
+    display: block;
+    width: 100%;
+}
+
+.productive__title{
+    font-family: var(--heading-font);
+    margin-bottom: .7em;
+}
+
+.productive__paragraph{
+    line-height: 1.7;
     margin-bottom: 1em;
 }
+
+.productive__cta{
+    display: inline-block;
+    color: var(--cyan-gradient);
+    /*Le da el tamano de linea al cta*/
+    line-height: 2.5;
+    text-decoration: none;
+    border-bottom: 1px solid var(--cyan-gradient);
+}
+
+.productive__arrow{
+    margin-left: .3em;
+    /*Centra verticalmente el contenido del cta o el a */
+    vertical-align: middle;
+}
+
+.card{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+
+}
+
+.card__item{
+    background-color: var(--blue-testimonials);
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5em 1em;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px -5px rgb(255, 255, 255, .5) ;
+}
+
+/*Para que se pongan las comillas debajo del primer contenedor*/
+.card__item--first{
+    position: relative;   
+}
+
+.card__item--first::before{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 30px;
+    height: 40px;
+    background-image: url(/assets/img/bg-quotes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*Para que la imagen este por detras*/
+    z-index: -1;
+
+}
+
+.card__profile{
+    margin-top: 1em;
+    display: flex; 
+    align-items: center;
+    gap: 1.5em;
+}
+
+.card__picture{
+    width: 40px;
+    height: 40px;
+}
+
+.card__img{
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card__name{
+    font-size: 1.2rem;
+    font-family: var(--heading-font);
+}
+
+.card__job{
+    color: #aaa9a9;
+}
+
+
+.join{
+    background-image: linear-gradient(var(--blue-main) 50% , var(--blue-footer) 50%);
+    color: #fff;
+    padding: 60px 0;
+}
+
+.join__container{
+    background-color: var(--blue-testimonials);
+    border-radius: 8px;
+    padding-left:1.5em;
+    padding-right: 1.5em;
+    text-align: center;
+}
+
+.join__title{
+    font-family: var(--heading-font);
+    margin-bottom: 1em;
+}
+
+.join__paragraph{
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+}
+
+.join__form{
+    display: grid;
+    gap: 1em;
+}
+
+.join__input{
+    padding: 15px 20px;
+    /*Los inputs no heredan el texto, por ende, se le agrega esta info*/
+    font: inherit;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+
+}
+
+.join__input--submit{
+    background-image: var(--gradient);
+    color: #fff;
+    font-family: var(--heading-font);
+    font-weight: bold;
+}
+
+.footer{
+    background-color: var(--blue-footer);
+    color: #fff;
+}
+
+.footer__logo{
+    width: 150px;
+    display: block;
+    margin-bottom: 2em;
+}
+
+.footer__content{
+    display: grid;
+    gap: 1em;
+}
+
+.footer__contact{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer__icon{
+    margin-top: 3px;
+}
+
+.footer__nav{
+    margin-top: 2.5em;
+    display: grid;
+    gap: .8em;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__social{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer__media{
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-left: 20px;
+    
+}
+
+
+
 
 
 

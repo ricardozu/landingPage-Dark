@@ -1,0 +1,48 @@
+.hero__title{
+    font-size: 2.5rem;
+}
+
+.hero__wave::before{
+    background-image: url("/assets/icon/bg-curvy-desktop.svg");
+    
+}
+
+.about{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.about__item{
+    /*Para que los contenedores utilicen mitad y mitad de pantalla*/
+    width: 47%;
+}
+
+.productive{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.productive__title{
+    font-size: 2rem;
+    margin-bottom: .6em;
+}
+
+.card{
+    flex-direction: row;
+
+}
+
+.join__container{
+    width: 65%;
+}
+
+.join__title{
+  font-size: 2rem;
+  margin-bottom: .7em;  
+}
+
+.join__form{
+    grid-template-columns: 1fr max-content;
+}
+
