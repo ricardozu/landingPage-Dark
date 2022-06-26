@@ -46,3 +46,18 @@
     grid-template-columns: 1fr max-content;
 }
 
+.footer__item{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.footer__nav{
+    margin-top: 0;
+}
+
+.footer__social{
+    margin-top: 0;
+    
+}
+
