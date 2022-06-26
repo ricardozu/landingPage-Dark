@@ -19,7 +19,7 @@ Content
 <h5>
 Experience
 </h5>
-[![mobile-2.png](https://i.postimg.cc/BZpn8Fxc/mobile-2.png)](https://postimg.cc/xqk2hcpc)
+![Experience](https://i.postimg.cc/BZpn8Fxc/mobile-2.png "Experience")
 
 <h3>**	Preview Desktop **<h3>
 
