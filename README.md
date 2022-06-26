@@ -1,5 +1,5 @@
 <p>
-	Practice using **HTML** and  **CSS**. You can see the landing page here:  
+	Practice using **HTML** and  **CSS**. You can see the landing page here: https://landingpage-fyro.web.app/
 </p>
 
 <h3>**	Preview mobile **<h3>
@@ -16,7 +16,7 @@ Content
 
 [![mobile-1.png](https://i.postimg.cc/7Lnfmzr9/mobile-1.png)](https://postimg.cc/wt3qB7vR)
 
-
+t a
 <h3>**	Preview Desktop **<h3>
 
 [![mobile-3.png](https://i.postimg.cc/52SXmrzT/mobile-3.png)](https://postimg.cc/75bPHmmn)
@@ -29,6 +29,6 @@ Footer
 
 [![mobile-6.png](https://i.postimg.cc/wjmVTgSJ/mobile-6.png)](https://postimg.cc/75q7K8PY)
 
-       <p >*Credits:  Landing page made by practices in Fronted Mentor*.</p> 
+<p>*Credits:  Landing page made by practices in Fronted Mentor*.</p> 
 
 link: https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd
