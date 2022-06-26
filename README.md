@@ -16,10 +16,6 @@ Content
 
 [![mobile-1.png](https://i.postimg.cc/7Lnfmzr9/mobile-1.png)](https://postimg.cc/wt3qB7vR)
 
-<h5>
-Experience
-</h5>
-![Experience](https://i.postimg.cc/BZpn8Fxc/mobile-2.png "Experience")
 
 <h3>**	Preview Desktop **<h3>
 
